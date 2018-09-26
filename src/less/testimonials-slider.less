@@ -1,0 +1,153 @@
+#testimonials-slider {
+  margin: 2.8% auto 2.6%;
+  width: 62vw;
+  position: relative;
+
+  article {
+    width: 16.66%;
+    float: left;
+    position: relative;
+
+    h3 {
+      margin-top: 2.9%;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1.1px;
+    }
+
+    p {
+      margin: auto;
+      width: 70%;
+      color: #6d7075;
+      font-size: 11px;
+      line-height: 25px;
+    }
+
+    img {
+      width: 14.2%;
+    }
+
+    .facebook {
+      cursor: pointer;
+      position: absolute;
+      left: 54.5%;
+      top: 6.4%;
+      width: 3.3%;
+    }
+  }
+
+  figure {
+    width: 600%;
+    transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+  }
+
+  #overflow {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  label, a {
+    cursor: pointer;
+  }
+
+  input {
+    display: none;
+  }
+
+  #controls {
+    width: 100%;
+  }
+
+  #active {
+    text-align: center;
+
+    label {
+      border-radius: 0.5vw;
+      display: inline-block;
+      margin: 4.7% 5px;
+      width: 11px;
+      height: 11px;
+      background: black;
+    }
+  }
+}
+
+#switch1:checked ~ #slides figure {
+  margin-left: 0;
+}
+
+#switch2:checked ~ #slides figure {
+  margin-left: -100%;
+}
+
+#switch3:checked ~ #slides figure {
+  margin-left: -200%;
+}
+
+#switch4:checked ~ #slides figure {
+  margin-left: -300%;
+}
+
+#switch5:checked ~ #slides figure {
+  margin-left: -400%;
+}
+
+#switch6:checked ~ #slides figure {
+  margin-left: -500%;
+}
+
+#switch1:checked ~ #controls label:nth-child(6),
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2),
+#switch4:checked ~ #controls label:nth-child(3),
+#switch5:checked ~ #controls label:nth-child(4),
+#switch6:checked ~ #controls label:nth-child(5)
+{
+  top: 42%;
+  left: -1%;
+  position: absolute;
+  .svg-testimonials--prev-arrow;
+  background-position-y: 99.5%;
+  background-size: 50px;
+  border-radius: 50%;
+  height: 34px;
+  width: 34px;
+}
+
+#switch1:checked ~ #controls label:nth-child(2),
+#switch2:checked ~ #controls label:nth-child(3),
+#switch3:checked ~ #controls label:nth-child(4),
+#switch4:checked ~ #controls label:nth-child(5),
+#switch5:checked ~ #controls label:nth-child(6),
+#switch6:checked ~ #controls label:nth-child(1)
+{
+  top: 42%;
+  right: -1%;
+  position: absolute;
+  .svg-testimonials--next-arrow;
+  background-position-y: 88.4%;
+  background-size: 50px;
+  border-radius: 50%;
+  height: 34px;
+  width: 34px;
+}
+
+#controls label {
+  transition: margin 0s, opacity 0.2s ease-out, background-color 0.2s ease-out;
+}
+
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3),
+#switch4:checked ~ #active label:nth-child(4),
+#switch5:checked ~ #active label:nth-child(5),
+#switch6:checked ~ #active label:nth-child(6)
+{
+  background: #eab96a;
+}
+
+label:hover{
+  opacity: 0.5;
+  background-color: #eab96a !important;
+}
+

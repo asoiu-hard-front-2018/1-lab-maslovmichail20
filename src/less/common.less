@@ -1,0 +1,40 @@
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
+
+.font-georgia {
+  font-family: Georgia, serif;
+}
+
+.horizontal-center {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+.menu {
+  ul {
+    text-align: center;
+    li {
+      display: inline;
+    }
+  }
+}
+
+.border-figure {
+  width: 100%;
+}
+
+.clearfix:after {
+  content: "."; /* добавить содержимое: "." */
+  display: block;  /* сделать блоком, т.к. inline не может иметь clear */
+  clear: both;  /* с обеих сторон clear */
+  visibility: hidden; /* сделать невидимым, зачем нам точка внизу? */
+  height: 0;  /* сделать высоту 0, чтобы не занимал место */
+}
+
+h2 {
+  font-size: 35px;
+  letter-spacing: 3.5px;
+}

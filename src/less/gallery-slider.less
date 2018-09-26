@@ -1,0 +1,150 @@
+#gallery-slider-container {
+  display: block;
+  position: relative;
+  padding: 1% 0;
+
+  .gallery-slider {
+    overflow: hidden;
+
+    ul {
+      overflow: hidden;
+      display: flex;
+      width: 1000vw;
+      padding: 0;
+      list-style: none;
+      position: relative;
+      transition: margin-left 1s;
+
+      li {
+        display: flex;
+        width: 100vw;
+        height: 26vw;
+        justify-content: space-between;
+
+        img {
+          height: 100%;
+          transition: margin-top 0.7s ease 1s;
+        }
+
+        .hidden {
+          margin-top: -26vw;
+        }
+
+        .visible {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      margin-top: 2.4%;
+      border: none;
+      background: none;
+      outline: none;
+
+      .square {
+        cursor: pointer;
+        width: 45px;
+        height:45px;
+        border: 1px solid #eab96a;
+        margin: 0 61px;
+        position: relative;
+
+        div {
+          position: absolute;
+          background: white;
+          height: 1px;
+        }
+
+        .horizontal-arrow {
+          width: 80px;
+        }
+
+        .top-arrow, .bottom-arrow {
+          width: 17px;
+        }
+
+
+      }
+    }
+
+    #prev {
+      .square {
+        .horizontal-arrow {
+          margin-top: 22px;
+          margin-left: 17px;
+        }
+        .top-arrow {
+          transform: rotate(135deg);
+          margin-top: 16px;
+          margin-left: 15px;
+        }
+        .bottom-arrow {
+          transform: rotate(45deg);
+          margin-top: 28px;
+          margin-left: 15px;
+        }
+      }
+      .square:hover {
+        .horizontal-arrow {
+          margin-left: 7px;
+        }
+        .top-arrow {
+          margin-left: 5px;
+        }
+        .bottom-arrow {
+          margin-left: 5px;
+        }
+      }
+    }
+
+    #next {
+      .square {
+        .horizontal-arrow {
+          margin-top: 22px;
+          margin-left: -52px;
+        }
+        .top-arrow {
+          transform: rotate(45deg);
+          margin-top: 16px;
+          margin-left: 15px;
+        }
+        .bottom-arrow {
+          transform: rotate(135deg);
+          margin-top: 28px;
+          margin-left: 15px;
+        }
+      }
+      .square:hover {
+        .horizontal-arrow {
+          margin-left: -42px;
+        }
+        .top-arrow {
+          margin-left: 25px;
+        }
+        .bottom-arrow {
+          margin-left: 25px;
+        }
+      }
+    }
+
+    span {
+      text-align: center;
+      width: 90px;
+      top: 50%;
+      margin-bottom: -0.625em;
+      font-size: 18px;
+    }
+
+    span > span {
+      color: #eab96a;
+    }
+  }
+}
+

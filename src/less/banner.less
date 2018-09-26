@@ -1,0 +1,98 @@
+#caption-container {
+  position: relative;
+  padding-bottom: 9%;
+  color: white;
+  cursor: default;
+  overflow: hidden;
+
+  img {
+    width: 4.7%;
+  }
+
+  .three-stars {
+    margin-top: 2%;
+  }
+
+  .triangle {
+    margin-bottom: 2px;
+  }
+
+  .triangle:first-child {
+    margin-right: 55px;
+  }
+
+  .triangle:last-child {
+    margin-left: 55px;
+  }
+
+  h1 {
+    margin: 2.25% 0;
+    font-size: 40px;
+    letter-spacing: 4.2px;
+
+    span {
+      color: #eab96a;
+    }
+  }
+
+  span {
+    margin: 1.5% 0 0;
+  }
+
+  span > span {
+    font-size: 12.5px;
+  }
+
+  .two-triangles {
+    width: 8%;
+    margin-top: 1.75%;
+  }
+
+  #down-button {
+    position: relative;
+    width: 42px;
+    height: 42px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-top: 3.7%;
+    cursor: pointer;
+
+    a {
+      position: absolute;
+      display: none;
+    }
+
+    div {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      width: 8px;
+      height: 1px;
+      background: #eab96a;
+    }
+
+    div:nth-child(2) {
+      transform: rotate(45deg);
+      left: 14px;
+    }
+
+    div:last-child {
+      transform: rotate(135deg);
+    }
+  }
+
+  #down-button:hover {
+    div {
+      height: 2px;
+      top: 60%;
+    }
+  }
+
+  .border-figure {
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -3.8%;
+  }
+}

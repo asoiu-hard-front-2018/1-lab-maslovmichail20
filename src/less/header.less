@@ -1,0 +1,109 @@
+header {
+  background: #261E17 url("jpg/header/banner.jpg") no-repeat center center;
+  background-size: cover;
+
+  #header-top {
+    display: flex;
+
+    .bottom-line {
+      height: 71px;
+      border-bottom: 1px solid #7B746A;
+    }
+
+    .small-box {
+      width: 22px;
+    }
+
+    #logo {
+      width: 217px;
+      position: relative;
+      margin-top: 17px;
+      color: white;
+      height: 106px;
+      cursor: default;
+      background: url("png/logo/logo.png") no-repeat center center;
+      background-size: contain;
+
+      span {
+        font-weight: bold;
+        position: absolute;
+        top: 50%;
+        margin-top: -0.6em;
+        font-size: 18px;
+      }
+
+      span:first-child {
+        left: 13%;
+      }
+
+      span:last-child {
+        right: 12%;
+      }
+    }
+
+    .big-box {
+      flex: auto;
+    }
+
+    #header-menu {
+      width: 500px;
+      position: relative;
+      color: white;
+      padding: 0;
+      cursor: default;
+
+      ul {
+        width: 100%;
+        position: absolute;
+        top: 13%;
+        padding: 0;
+        li {
+          font-size: 9px;
+          font-weight: bold;
+          padding: 0 10px 28px;
+          border-bottom: 2px solid rgba(234,185,106, 0);
+
+          img {
+            width: 3px;
+            margin-bottom: 0.1em;
+          }
+
+          a {
+            color: white;
+            text-decoration: none;
+          }
+        }
+        li:last-child {
+          margin-right: 0;
+        }
+
+        li:nth-child(2n+1) {
+          cursor: pointer;
+        }
+
+        li:nth-child(2n+1):hover {
+          border-bottom: 2px solid rgba(234,185,106, 1);
+          opacity: 0.9;
+          a {
+            color: #eab96a;
+          }
+        }
+      }
+    }
+
+    .phone-number {
+      width: 240px;
+      position: relative;
+      color: white;
+
+      span {
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: -0.625em;
+      }
+    }
+  }
+}

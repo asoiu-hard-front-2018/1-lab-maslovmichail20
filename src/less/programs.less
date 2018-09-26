@@ -1,0 +1,248 @@
+#programs {
+  margin-bottom: 3.5%;
+
+  .small-text {
+    font-size: 11.2px;
+    color: #6d7075;
+  }
+
+  h2 {
+    margin-top: 5.9%;
+
+    img {
+      width: 0.8%;
+      margin: 0 7px 7px;
+    }
+  }
+
+  span {
+    margin-top: 1.7%;
+  }
+
+  #programs-menu {
+    width: 62%;
+    display: block;
+    margin-top: 5.1%;
+    border-bottom: 1px solid #6d7075;
+
+    ul {
+      width: 100%;
+      padding: 0;
+      margin: 2.8% auto 0;
+      li {
+        display: inline-block;
+        width: 21%;
+        padding: 0 0 2.7%;
+        margin: 0 2.4%;
+        border-bottom: 2px solid rgba(0, 0, 0, 0);
+        a {
+          font-weight: bold;
+          cursor: pointer;
+          letter-spacing: 1.8px;
+          font-size: 14px;
+          color: #6d7075;
+        }
+
+        a:hover {
+          color: black;
+        }
+      }
+
+      .active {
+        border-bottom: 2px solid black;
+        a {
+          color: black;
+        }
+      }
+    }
+  }
+
+  #basic, #premium, #platinum {
+    transition: opacity .5s ease;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .visible {
+    display: block;
+  }
+
+  figure {
+    display: block;
+    position: relative;
+    width: 62%;
+
+    .fon-text {
+      display: block;
+      position: absolute;
+      z-index: -1;
+      right: 5%;
+      margin: -1.5% 0 0;
+
+      font-size: 145px;
+      font-weight: bold;
+      color: #dddddd;
+    }
+
+    .image {
+      margin-top: 8%;
+      float: left;
+      width: 54.2%;
+    }
+
+    .info {
+      float: left;
+      margin: 3.5vw 0 0 3vw;
+
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        font-weight: bold;
+        font-size: 26px;
+        margin-bottom: 2.5vw;
+      }
+
+      span {
+        position: relative;
+        font-size: 12px;
+        text-align: left;
+        margin:0 0 0.8vw 0;
+
+        .icon {
+          display: inline-block;
+          width: 24px;
+          height: 34px;
+          margin-bottom: -10px;
+          margin-right: 10px;
+        }
+
+        .list {
+          .svg-programs--list-icon;
+          background-size: 60px auto;
+          background-position: 40% 65%;
+        }
+
+        .clock {
+          .svg-programs--clock-icon;
+          background-size: 60px auto;
+          background-position-x: 40%;
+        }
+      }
+
+      .price {
+        margin: 0.2vw 0 0 1%;
+        font-size: 40px;
+        font-weight: bold;
+
+        span {
+          margin: 0;
+          font-size: 24px;
+        }
+      }
+
+      button {
+        margin-top: 1.3vw;
+        margin-left: 1%;
+        width: 89%;
+        padding: 7% 0;
+
+        font-size: 10px;
+        font-weight: bold;
+        color: white;
+        border: none;
+        background: black;
+        letter-spacing: 1px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #6d7075;
+      }
+    }
+  }
+
+  .articles {
+    width: 62%;
+    margin-top: 3.7%;
+
+    hr {
+      background: #6d7075;
+      margin-bottom: -2.1%;
+    }
+
+    article {
+      float: left;
+      width: 28%;
+
+      text-align: left;
+      margin-right: 7.4%;
+
+      h4 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 13.5px;
+        line-height: 17px;
+      }
+
+      p {
+        line-height: 25px;
+        font-size: 11px;
+        color: #6d7075;
+      }
+    }
+
+    article:last-child {
+      margin-right: 0;
+    }
+  }
+
+  table {
+    margin: 0.7% 0 0 19%;
+    width: 492px;
+    border-collapse: collapse;
+    border: 1px solid black;
+
+    td:nth-child(1) {
+      width: 7.2%;
+    }
+
+    td {
+      border: 1px solid #6d7075;
+      line-height: 25px;
+      font-size: 11px;
+      color: #6d7075;
+      padding-left: 2%;
+    }
+
+    .true {
+      .svg-programs--true;
+      background-size: 70px;
+      background-position: 22% 77%;
+    }
+
+    .false {
+      .svg-programs--false;
+      background-size: 70px;
+      background-position: 20% 54.2%;
+    }
+
+    caption {
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 0.3px;
+      text-align: left;
+      margin-bottom: -0.2%;
+    }
+  }
+
+  .beans {
+    width: 40.5%;
+    position: absolute;
+    right: 0;
+    top: 252%;
+    z-index: 1000;
+  }
+}

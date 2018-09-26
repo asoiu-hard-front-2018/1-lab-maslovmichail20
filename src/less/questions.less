@@ -1,0 +1,105 @@
+#questions {
+  position: relative;
+
+  .wrapper {
+    padding-top: 6.9%;
+    margin-left: 41%;
+    margin-bottom: 13.5%;
+    text-align: left;
+
+    h2 {
+      margin: 0;
+    }
+
+    hr {
+      border: 1px solid #6d7075;
+      width: 68%;
+      margin: 1% 0 1.5% 0;
+      background: #6d7075;
+    }
+
+    span {
+      font-size: 11px;
+    }
+
+    form {
+      margin-top: 6.7%;
+
+      input {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 11px;
+        background: none;
+        padding: 3% 0 0 0;
+      }
+
+      input[type=text], input[type=tel] {
+        border: none;
+        border-bottom: 1px solid black;
+        width: 35%;
+        padding-bottom: 1.5%;
+      }
+
+      input[type=submit] {
+        border: none;
+      }
+
+      input:focus, button {
+        outline: none;
+      }
+
+      button {
+        position: relative;
+        border: 1px solid black;
+        background: none;
+        padding: 1.5%;
+        margin-left: 6.3%;
+        width: 20%;
+        cursor: pointer;
+
+        div {
+          position: absolute;
+          height: 1px;
+          background: black;
+        }
+
+        .horizontal-arrow {
+          width: 50%;
+          top: 50%;
+          right: -30%;
+        }
+
+        .top-arrow, .bottom-arrow {
+          width: 10%;
+          right: -31%;
+        }
+
+        .top-arrow {
+          transform: rotate(45deg);
+          top: 37%;
+        }
+
+        .bottom-arrow {
+          transform: rotate(135deg);
+          top: 64%;
+        }
+      }
+
+      button:hover {
+        background: #dddddd;
+
+        .horizontal-arrow {
+          right: -45%;
+        }
+
+        .top-arrow, .bottom-arrow {
+          right: -47%;
+        }
+      }
+    }
+  }
+
+  .border-figure {
+    position: absolute;
+  }
+}
